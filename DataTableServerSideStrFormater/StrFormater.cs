@@ -62,7 +62,7 @@ namespace DataTableServerSideStrFormater
 
             //this.textBox1.Text = temp;
 
-            string[] temp = textBox1.Text.Split(',');
+            string[] temp = textBox1.Text.Replace("\r\n", ",").Split(',');
 
             string a = "";
 
@@ -101,7 +101,8 @@ namespace DataTableServerSideStrFormater
 
             //this.textBox1.Text = temp;
 
-            string[] temp = textBox1.Text.Split(',');
+            //string[] temp = textBox1.Text.Split(',');
+            string[] temp = textBox1.Text.Replace("\r\n", ",").Split(',');
 
             string a = "";
 
@@ -126,7 +127,10 @@ namespace DataTableServerSideStrFormater
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string[] temp = textBox1.Text.Split(',');
+            string[] temp = textBox1.Text.Replace("\r\n", ",").Split(',');
+            //string[] temp = textBox1.Text.Split(',');
+            //textBox1.Text.Replace("\r\n","")
+
 
             string a = "";
 
